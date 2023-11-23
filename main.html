@@ -7,29 +7,37 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <table style="width: 100%; height: 100%;">
+    <table style="width: 100%; height: 100%;" class="tab">
       <!-- Your code here -->
-		<tr class="row-1">
-			<table id="nest-table-2">
-				<tr><td>Nested Table 2</td></tr>
-				<tr><td class="col-1">Column 1</td><td class="col-1">Column 2</td></tr>
-				<tr><td>abc</td><td>def</td></tr>
+			<table class="row-1">
+			  <td>
+				<table id="nest-table-2">
+					<tr><th class="nest" colspan="2">Nested Table 2</th></tr>
+					<tr><td class="col-1">Column 1</td><td class="col-1">Column 2</td></tr>
+					<tr><td>abc</td><td>def</td></tr>
+				</table>
+			  </td>
+			  <td>
+				<table id="nest-table-1">
+					<tr><th class="nest">Nested Table 1</th></tr>
+					<tr><li>List item</li><li>List item</li><li>List item</li></tr>
+				</table>
+			  </td>
 			</table>
-			<table id="nest-table-1">
-				<tr>Nested Table 1</tr>
-				<tr><li>List item</li><li>List item</li><li>List item</li></tr>
-			</table>
-		</tr>
-		<tr class="row-2">
+		<table class="row-2">
+			<td>
 			<table id="nest-table-3">
-				<tr><td>Nested Table 3</td></tr>
+				<tr><th class="nest" colspan="2">Nested Table 3</th></tr>
 				<tr><td><a href="6">Nested Table</a></td><td>Demo Continued</td></tr>
 			</table>
+				</td>
+			<td>
 			<table id="nest-table-4">
-				<tr><td>Nested Table 4</td></tr>
-				<tr><td>HTML</td></tr>
+				<tr><th class="nest">Nested Table 4</th></tr>
+				<tr class="blac"><td>HTML</td></tr>
 			</table>
-		</tr>
+				</td>
+		</table>
 		
     </table>
   </body>
